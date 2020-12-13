@@ -1,0 +1,69 @@
+body {
+	background-color: #dcd9d4;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.5) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		radial-gradient(
+			at 50% 0%,
+			rgba(255, 255, 255, 0.1) 0%,
+			rgba(0, 0, 0, 0.5) 50%
+		);
+	background-blend-mode: soft-light, screen;
+	background-repeat: no-repeat;
+}
+header {
+	position: fixed;
+}
+.container {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25rem;
+	padding: 2.5rem;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 0.625rem;
+}
+
+#title-h1 {
+	color: white;
+	text-shadow: 4px 4px 2px rgb(255, 0, 0);
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+}
+
+.form-group > input {
+	margin-bottom: 0.5rem;
+	width: 100%;
+}
+
+.form-group > label {
+	color: white;
+}
+
+.no-deco {
+	padding: 10px;
+}
+
+.no-deco > small > a {
+	text-decoration: none;
+	color: white;
+}
+
+.no-deco > small > a:hover {
+	text-decoration: underline;
+}
+
+.no-deco > button > a {
+	text-decoration: none;
+	color: black;
+}
+
+.no-deco > button > a:hover {
+	text-decoration: none;
+	color: darkred;
+}

@@ -1,0 +1,101 @@
+main {
+	padding: 50px;
+	/* border: 1px solid; */
+	/* background: #000000; */
+}
+
+.graella {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+	gap: 1rem;
+	cursor: pointer;
+}
+
+/* 
+
+Con el tema del favorito me encalle y no sabia como hacerlo asique adapte una manera que encontre por internet.
+Estoy al 120% seguro que es una manera muy chapuzera de hacerlo pero de verdad que me dado mucho contra este muro.
+
+*/
+
+input[type="checkbox"].fav {
+	top: 0.4rem;
+	left: 2.3rem;
+	height: 1px;
+	line-height: 2rem;
+	padding: 0;
+	border: 0;
+	position: relative;
+	opacity: 0;
+	cursor: pointer;
+}
+
+input[type="checkbox"].fav + label.fav-label {
+	padding-left: 45px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 40px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+input[type="checkbox"].fav:checked + label.fav-label {
+	background-position: 0 -40px;
+}
+
+label.fav-label {
+	background-image: url("../img/star.png");
+}
+
+.graella-item {
+	background-image: url("https://pics.filmaffinity.com/akira-557684565-mmed.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px #bbbbbb;
+	height: 234px;
+	position: relative;
+	overflow: hidden;
+}
+
+.item-descripcion {
+	opacity: 0;
+	background-color: #0000008e;
+	color: #fff;
+	position: absolute;
+	transition-delay: 0.1s;
+	transition-duration: 0s;
+}
+
+.item-descripcion > p {
+	margin: 0.5rem;
+}
+
+.graella-item:hover .item-descripcion {
+	opacity: 1;
+}
+
+.link-ficha {
+	font-size: 0.85rem;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: white;
+	color: white;
+	text-decoration: none;
+	transition-delay: 0.1s;
+	transition-duration: 0s;
+}
+
+.graella-item:hover .link-ficha {
+	opacity: 1;
+	text-decoration: none;
+}
+
+.link-ficha a:visited {
+	color: black;
+}
